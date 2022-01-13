@@ -1,0 +1,135 @@
+ul {
+    list-style: none;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    padding-right: 16px;
+    padding-left: 16px;
+    width: 100vw;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .bar {
+    border-radius: 5px;
+    background-color: #28352f;
+    display: block;
+    height: 0.126rem;
+    margin: 0.3125rem auto;
+    transition: all 0.3s ease-in-out;
+    width: 1.562rem;
+  }
+  
+  .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    flex-flow: row nowrap;
+  }
+  
+  .logo a {
+    color: #28352f;
+    text-decoration: none;
+  }
+  
+  section.hero {
+    background-image: url('../images/header-illsutration-mobile.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    position: relative;
+  }
+  
+  .headline-desc {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .headline-desc h1 {
+    height: 192px;
+    width: 327px;
+    padding: 15px 24px 63px 24px;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #172b4d;
+  }
+  
+  .headline-desc h1 span {
+    color: #3db682;
+  }
+  
+  .headline-desc p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+    margin: 58px 0;
+  }
+  
+  .about-me p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+    margin: 28px 0;
+  }
+  
+  .headline-desc h1 p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .about-me h1 {
+    width: 327px;
+    padding: 15px 24px 10px 24px;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 52px;
+    letter-spacing: 0;
+    text-align: center;
+    color: #172b4d;
+    margin: 0;
+  }
+  
+  .about-me h1 p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-links li {
+    padding: 0 8px;
+  }
+  
+  .social-links i {
+    color: #505f79;
+  }
+  
+
+  
