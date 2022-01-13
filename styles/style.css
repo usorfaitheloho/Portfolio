@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Header navigation */
+header {
+  width: 100%;
+  position: relative;
+}
+
+/* Work section */
+section,
+header,
+div,
+article,
+img,
+main {
+  display: block;
+}
+
+section {
+  position: relative;
+  width: 100%;
+}
+
+ol {
+  list-style: none;
+}
