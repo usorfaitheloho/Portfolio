@@ -75,7 +75,7 @@ section.hero {
   margin: 58px 0;
 }
 
-.about-me p {
+.about-me-container p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -90,14 +90,28 @@ section.hero {
   color: #172b4d;
 }
 
-.about-me {
+section.about-me {
+  margin-top: 30px;
+  position: relative;
+}
+
+.about-me-container {
+  position: relative;
+  top: -70px;
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
+  background-image: url('../images/illustration- about me- mobile.png');
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
-.about-me h1 {
+.about-me-icon {
+  float: right;
+}
+
+.about-me-container h1 {
   width: 327px;
   padding: 15px 24px 10px 24px;
   font-size: 40px;
@@ -109,7 +123,7 @@ section.hero {
   margin: 0;
 }
 
-.about-me h1 p {
+.about-me-container h1 p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -129,4 +143,225 @@ section.hero {
 
 .social-links i {
   color: #505f79;
+}
+
+section.recent-works {
+  margin-top: 20px;
+}
+
+.recent-works .dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recent-works h2 {
+  color: #172b4d;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+span.bottom {
+  height: 4px;
+  width: 48px;
+  background: #36b37e;
+  border-radius: 24px;
+  text-align: center;
+  display: block;
+}
+
+.allprojects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+.project-container-card {
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  height: 474px;
+  position: relative;
+}
+
+.project-desc-tech-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 222px;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+}
+
+h4.project-desc {
+  color: #3a4a42;
+  margin: 16px 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tech-list-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.tech-list-container .tech-list {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #ebf0ee;
+  margin: 0 6px;
+}
+
+.tech-list .tech-name {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #3a4a42;
+}
+
+.btn {
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+}
+
+.btn.btn-projects {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #36b37e;
+  color: #fff;
+  font-size: 16px;
+  min-width: 122px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+  align-self: center;
+}
+
+.programming-skills {
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  max-width: 327px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
+.language-img {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.skills-name {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.skills-name h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.tech-skill-name {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+li.lang-skill-name {
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 12px;
+  margin: 5px 8px;
+}
+
+li.lang-skill-name p {
+  color: #36b37e;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+div.contact-me {
+  margin-top: 52px;
+}
+
+.contact-me h2.heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #172b4d;
+}
+
+.contact-form {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  padding: 6px;
+  margin: 24px 0;
+}
+
+.form-control {
+  width: 100%;
+  height: inherit;
+  outline: none;
+  user-select: none;
+  padding: 8px;
+}
+
+.text-group {
+  width: 100%;
+  text-align: center;
+}
+
+.text-group textarea {
+  width: 100%;
+  user-select: none;
+  outline: none;
+  padding: 8px;
+  margin-bottom: 24px;
+}
+
+.btn.btn-form-submit {
+  background-color: #3db682;
+  color: white;
+  text-align: center;
 }
