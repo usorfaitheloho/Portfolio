@@ -75,7 +75,7 @@ section.hero {
   margin: 58px 0;
 }
 
-.about-me p {
+.about-me-container p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -90,14 +90,28 @@ section.hero {
   color: #172b4d;
 }
 
-.about-me {
+section.about-me {
+  margin-top: 30px;
+  position: relative;
+}
+
+.about-me-container {
+  position: relative;
+  top: -70px;
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
+  background-image: url('../images/illustration- about me- mobile.png');
+  background-position: left;
+  background-repeat: no-repeat;
 }
 
-.about-me h1 {
+.about-me-icon {
+  float: right;
+}
+
+.about-me-container h1 {
   width: 327px;
   padding: 15px 24px 10px 24px;
   font-size: 40px;
@@ -109,7 +123,7 @@ section.hero {
   margin: 0;
 }
 
-.about-me h1 p {
+.about-me-container h1 p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -267,12 +281,6 @@ h4.project-desc {
 
 img {
   vertical-align: middle;
-}
-
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .skills-name {
