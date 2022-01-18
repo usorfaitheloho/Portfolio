@@ -7,6 +7,7 @@ ul {
   padding-right: 16px;
   padding-left: 16px;
   width: 100vw;
+  height: auto;
 }
 
 .hamburger {
@@ -329,6 +330,11 @@ div.contact-me {
 .contact-form {
   margin-top: 40px;
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+
 }
 
 .form-group {
@@ -364,4 +370,34 @@ div.contact-me {
   background-color: #3db682;
   color: white;
   text-align: center;
+}
+
+.form-control {
+  max-width: 327px;
+  height: 48px;
+  border-radius: 4px;
+  font-family: 'poppins';
+}
+
+textarea {
+  max-width: 315px;
+  height: 114px;
+  border-radius: 4px;
+}
+
+::placeholder {
+  font-size: 15px;
+  color: #172b4d;
+  padding-left: 16px;
+}
+
+.footer {
+  padding-top: 40px;
+}
+
+.gmail {
+  font-size: 20px;
+  padding-top: 20px;
+  color: #42526e;
+  font-weight: 600;
 }
