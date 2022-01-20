@@ -426,8 +426,7 @@ textarea {
   color: #344563;
 }
 
-@media screen and (min-width: 992px){
-
+@media screen and (min-width: 992px) {
   .desktop_nav {
     display: flex;
     width: 100%;
@@ -439,113 +438,125 @@ textarea {
 
   .desktop_nav_wrapper {
     display: flex;
-   align-items: center;
+    align-items: center;
     justify-content: center;
-    
   }
+
   .desktop_nav_li {
     margin-right: 42px;
   }
-  .desktop_nav_li a{
+
+  .desktop_nav_li a {
     text-decoration: none;
     color: #172b4d;
     font-weight: 700;
   }
 
   .desktop_nav_li a:hover {
-    color: #172B4D;
+    color: #172b4d;
     font-size: large;
   }
-.hamburger {
-  display: none;
-}
-.logo{
-  display: none;
-}
-section.hero {
-  background-image: url('../images/Header-llustration-desktop.png');
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 1250px;
-  position: relative;
-}
-.headline-desc {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 100%;
-  padding-top: 170px;
 
-}
-.headline-desc h1{
-  width: 700px;
-  font-size: 48px;
-  line-height: 60px;
-}
-.headline-desc p{
-  width: 60%;
-  line-height: 28px;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 0.89px;
-  margin-top: -30px;
-}
-.allprojects-container {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-evenly;
- margin: 0 4.5vw ;
-}
-.project-container-card{
-  width: 28vw;
-  height: 50vh;
-}
-.programming-skills-container{
- display: flex;
- justify-content: space-evenly;
- margin: 0 3.5vw;
-}
-.programming-skills{
-  width: 28vw;
-}
+  .hamburger {
+    display: none;
+  }
 
-.about-me-container {
-  position: relative;
-  top: -70px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  width: 100%;
-  background-image: url("../images/illustration-about-me-2-desktop.png");
-  background-position: left;
-  background-repeat: no-repeat;
-}
+  .logo {
+    display: none;
+  }
 
-.about-me-icon {
-  float: right;
-  padding-right: 40px;
-}
-.about-me-container p {
-  width: 920px;
-  height: 96px;
-  line-height: 32px;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: 1.80px;
-  color: #172b4d;
-}
-.wrapper{
-  margin-bottom: 150px;
-}
-.btn.btn-projects {
-  
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border-radius: 4px;
-  align-self: center;
-}
+  section.hero {
+    background-image: url('../images/Header-llustration-desktop.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1250px;
+    position: relative;
+  }
+
+  .headline-desc {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 170px;
+  }
+
+  .headline-desc h1 {
+    width: 700px;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headline-desc p {
+    width: 60%;
+    line-height: 28px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.89px;
+    margin-top: -30px;
+  }
+
+  .allprojects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 4.5vw;
+  }
+
+  .project-container-card {
+    width: 28vw;
+    height: 50vh;
+  }
+
+  .programming-skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 3.5vw;
+  }
+
+  .programming-skills {
+    width: 28vw;
+  }
+
+  .about-me-container {
+    position: relative;
+    top: -70px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    background-image: url("../images/illustration-about-me-2-desktop.png");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  .about-me-icon {
+    float: right;
+    padding-right: 40px;
+  }
+
+  .about-me-container p {
+    width: 920px;
+    height: 96px;
+    line-height: 32px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1.8px;
+    color: #172b4d;
+  }
+
+  .wrapper {
+    margin-bottom: 150px;
+  }
+
+  .btn.btn-projects {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    align-self: center;
+  }
 }
