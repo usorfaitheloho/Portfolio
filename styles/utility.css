@@ -7,6 +7,7 @@ ul {
   padding-right: 16px;
   padding-left: 16px;
   width: 100vw;
+  height: auto;
 }
 
 .hamburger {
@@ -257,8 +258,8 @@ h4.project-desc {
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
-  max-width: 327px;
-  width: 100%;
+  width: 378px;
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -317,6 +318,7 @@ li.lang-skill-name p {
 
 div.contact-me {
   margin-top: 52px;
+  position: relative;
 }
 
 .contact-me h2.heading {
@@ -329,14 +331,17 @@ div.contact-me {
 .contact-form {
   margin-top: 40px;
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .form-group {
   width: 100%;
   height: 48px;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 6px;
-  margin: 24px 0;
+  margin: 15px 0;
 }
 
 .form-control {
@@ -345,23 +350,67 @@ div.contact-me {
   outline: none;
   user-select: none;
   padding: 8px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .text-group {
   width: 100%;
   text-align: center;
+  margin: 12px;
+}
+
+textarea {
+  width: 100%;
+  height: 114px;
+  border-radius: 4px;
+  font-family: 'inter', serif;
 }
 
 .text-group textarea {
-  width: 100%;
+  width: 97%;
   user-select: none;
   outline: none;
   padding: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
+  border: 1px solid #60c095;
+  border-radius: 4px;
 }
 
 .btn.btn-form-submit {
   background-color: #3db682;
   color: white;
+  width: 129px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 17px;
   text-align: center;
+  border-radius: 6px;
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 3.5%;
+  right: 0;
+}
+
+::placeholder {
+  font-size: 18px;
+  padding-left: 14px;
+  color: #6b778c;
+}
+
+.footer {
+  padding-top: 40px;
+}
+
+.gmail {
+  display: flex;
+  font-size: 20px;
+  padding-top: 20px;
+  color: #42526e;
+  font-weight: 600;
+  justify-content: center;
+  right: 69px;
 }
