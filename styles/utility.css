@@ -350,6 +350,9 @@ div.contact-me {
   outline: none;
   user-select: none;
   padding: 8px;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .text-group {
@@ -404,7 +407,6 @@ textarea {
 
 .gmail {
   display: flex;
-  position: absolute;
   font-size: 20px;
   padding-top: 20px;
   color: #42526e;
