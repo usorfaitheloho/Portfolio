@@ -570,6 +570,7 @@ textarea {
     background-image: url("../images/illustration-1-contact-form-desktop.png");
     background-repeat: no-repeat;
     background-position: left 24vh;
+    padding: 0 4px 0 4px;
   }
 
   .btn.btn-projects {
