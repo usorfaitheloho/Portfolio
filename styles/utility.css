@@ -39,6 +39,12 @@ ul {
   align-items: center;
   padding: 1.5rem 0;
   flex-flow: row nowrap;
+  animation: rotation 5s;
+}
+@keyframes rotation {
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 .logo a {
