@@ -41,6 +41,7 @@ ul {
   flex-flow: row nowrap;
   animation: rotation 5s;
 }
+
 @keyframes rotation {
   50% {
     transform: rotate(360deg);
@@ -589,6 +590,7 @@ textarea {
 
   .footer-img {
     content: url("../images/contact\ form-illustratoin-3-desktop.png");
+    z-index: -2;
   }
 
   .contact-me {
@@ -606,12 +608,12 @@ textarea {
   .contact-me h2.heading {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     line-height: 52px;
     width: 59vw;
     height: 256px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     color: #172b4d;
     margin: 28px 1rem;
