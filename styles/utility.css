@@ -607,7 +607,6 @@ textarea {
 
   .contact-me h2.heading {
     display: flex;
-    align-items: center;
     justify-content: left;
     line-height: 52px;
     width: 59vw;
@@ -627,7 +626,7 @@ textarea {
     height: 50vh;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    text-align: left;
     margin-left: -70px;
   }
 
@@ -651,7 +650,7 @@ textarea {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 112%;
+    top: 98%;
     left: 40vw;
   }
 
@@ -668,5 +667,9 @@ textarea {
     font-size: 17px;
     border-radius: 6px;
     margin-right: 565px;
+  }
+
+  hr{
+    margin-top: 70px;
   }
 }
