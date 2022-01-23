@@ -29,7 +29,6 @@ ul {
   display: block;
   height: 0.126rem;
   margin: 0.3125rem auto;
-  transition: all 0.3s ease-in-out;
   width: 1.562rem;
 }
 
@@ -669,5 +668,8 @@ textarea {
     border-radius: 6px;
     margin-right: 565px;
   }
-  
+
+  hr {
+    margin-top: 70px;
+  }
 }
