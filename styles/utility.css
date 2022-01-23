@@ -39,6 +39,13 @@ ul {
   align-items: center;
   padding: 1.5rem 0;
   flex-flow: row nowrap;
+  animation: rotation 5s;
+}
+
+@keyframes rotation {
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 .logo a {
@@ -583,6 +590,7 @@ textarea {
 
   .footer-img {
     content: url("../images/contact\ form-illustratoin-3-desktop.png");
+    z-index: -2;
   }
 
   .contact-me {
@@ -599,13 +607,12 @@ textarea {
 
   .contact-me h2.heading {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
     line-height: 52px;
     width: 59vw;
     height: 256px;
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     color: #172b4d;
     margin: 28px 1rem;
@@ -619,7 +626,7 @@ textarea {
     height: 50vh;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    text-align: left;
     margin-left: -70px;
   }
 
@@ -643,7 +650,7 @@ textarea {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 112%;
+    top: 98%;
     left: 40vw;
   }
 
@@ -660,5 +667,9 @@ textarea {
     font-size: 17px;
     border-radius: 6px;
     margin-right: 565px;
+  }
+
+  hr{
+    margin-top: 70px;
   }
 }
