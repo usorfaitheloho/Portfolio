@@ -10,6 +10,10 @@ A site for my portfolio
 
 - Git and Github
 
+## Deployment
+
+https://usorfaitheloho.github.io/Portfolio/
+
 
 
 ## Getting started
