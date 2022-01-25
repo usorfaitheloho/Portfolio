@@ -49,6 +49,8 @@ ul {
 
 .logo a {
   color: #28352f;
+  font-weight: bolder;
+  font-size: 25px;
   text-decoration: none;
 }
 
@@ -99,13 +101,6 @@ section.hero {
   margin: 28px 0;
 }
 
-.headline-desc h1 p {
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #172b4d;
-}
-
 section.about-me {
   margin-top: 30px;
   position: relative;
@@ -127,23 +122,16 @@ section.about-me {
   float: right;
 }
 
-.about-me-container h1 {
+.about-me-container h2 {
   width: 327px;
   padding: 15px 24px 10px 24px;
-  font-size: 40px;
+  font-size: 46px;
   font-style: normal;
   line-height: 52px;
   letter-spacing: 0;
   text-align: center;
   color: #172b4d;
   margin: 0;
-}
-
-.about-me-container h1 p {
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #172b4d;
 }
 
 .social-links {
@@ -368,6 +356,10 @@ div.contact-me {
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.form-control:focus {
+  border: 1px solid #60c095;
 }
 
 .text-group {
