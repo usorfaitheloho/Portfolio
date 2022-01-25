@@ -357,6 +357,9 @@ div.contact-me {
   box-sizing: border-box;
   border-radius: 4px;
 }
+.form-control:focus{
+  border: 1px solid #60c095;
+}
 
 .text-group {
   width: 100%;
