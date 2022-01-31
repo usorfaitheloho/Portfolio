@@ -22,6 +22,15 @@ ul {
 .hamburger {
   display: block;
 }
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform:translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform:translateY(-8px) rotate(-45deg);
+}
 
 .bar {
   border-radius: 5px;
@@ -41,6 +50,26 @@ ul {
   flex-flow: row nowrap;
   animation: rotation 5s;
 }
+
+.desktop_nav {
+  display: flex;
+ }
+ .desktop_nav_wrapper {
+   position: fixed;
+   left: -100%;
+   top: 70px;
+   gap: 0;
+   flex-direction: column;
+   background-color:  #FFFFFF;
+   width: 100%;
+   text-align: center;
+   transition: 0.3s;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 20px;
+   color: #344563;
+ }
 
 @keyframes rotation {
   50% {
@@ -431,19 +460,6 @@ textarea {
   right: 69px;
 }
 
-.desktop_nav {
-  display: none;
-}
-
-.desk_nav_info {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #344563;
-}
 
 @media screen and (min-width: 992px) {
   .desktop_nav {
@@ -459,7 +475,7 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -87%;
+   ? margin-bottom: -87%;
    
   }
 
