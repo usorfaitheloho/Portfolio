@@ -449,7 +449,7 @@ textarea {
   .desktop_nav {
     display: flex;
     width: 100%;
-    margin-left: auto;
+    margin-left: 100%;
     align-items: center;
     justify-content: center;
     margin-right: 100px;
@@ -459,16 +459,21 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -87%;
+   
   }
 
   .desktop_nav_li {
     margin-right: 42px;
+    
+    
   }
 
   .desktop_nav_li a {
     text-decoration: none;
     color: #172b4d;
     font-weight: 700;
+    
   }
 
   .desktop_nav_li a:hover {
