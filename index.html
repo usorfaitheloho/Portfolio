@@ -32,10 +32,29 @@
                     <a href="#home">Welcome </a>
                 </div>
                 <nav>
-                    <!-- links will come here -->
                     <div class="hamburger">
-                        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                        <i class="fas fa-bars" onclick="changeIcon()"></i>
                     </div>
+                    <div class="toggle-menu">
+                    <ul class="mobile_nav">
+                        <li class="menu_link " onclick="hideMenu()"><a href="#Portfolio">Portfolio</a></li>
+                        <li class="menu_link" onclick="hideMenu()"><a href="#About">About</a></li>
+                        <li class="menu_link" onclick="hideMenu()"><a href="#Contact">Contact</a></li>
+                      </ul>
+                    </div>
+                </nav>
+                <nav class="desktop_nav">
+                    <ul class="desktop_nav_wrapper">
+                        <li class="desktop_nav_li">
+                          <a href="#Portfolio" class="desktop_nav_info">Portfolio</a>
+                        </li>
+                        <li class="desktop_nav_li">
+                          <a href="#About" class="desktop_nav_info">About</a>
+                        </li>
+                        <li class="desktop_nav_li">
+                          <a href="#Contact" class="desktop_nav_info">Contact</a>
+                        </li>
+                    </ul>
                 </nav>
                 
             </div>
@@ -44,19 +63,6 @@
 
     <section class='hero'>
         <div class="wrapper">
-            <nav class="desktop_nav">
-                <ul class="desktop_nav_wrapper">
-                    <li class="desktop_nav_li">
-                      <a href="#Portfolio" class="desktop_nav_info">Portfolio</a>
-                    </li>
-                    <li class="desktop_nav_li">
-                      <a href="#About" class="desktop_nav_info">About</a>
-                    </li>
-                    <li class="desktop_nav_li">
-                      <a href="#Contact" class="desktop_nav_info">Contact</a>
-                    </li>
-                </ul>
-            </nav>
             <div class="headline-desc">
                 <h1>Hey there. I’m Faith<br />
                     <span>I’m a software developer</span></h1>
@@ -341,6 +347,7 @@
 
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
