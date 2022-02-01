@@ -78,11 +78,11 @@ ul {
   animation: rotation 5s;
 }
 
-/* @keyframes rotation {
-  50% {
-    transform: rotate(360deg);
+@keyframes rotation {
+  0% {
+    top: 20px;
   }
-} */
+}
 
 .logo a {
   color: #28352f;
