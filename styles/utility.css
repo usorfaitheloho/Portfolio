@@ -150,7 +150,7 @@ section.about-me {
   flex-flow: column;
   align-items: center;
   width: 100%;
-  background-image: url('../images/illustration- about me- mobile.png');
+  background-image: url('../images/illustration-about-me-mobile.png');
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -519,10 +519,6 @@ textarea {
 }
 .project-image{
   margin-top: 20px;
-}
-.project-image img{
-  width: 20px;
-  height: 20px;
 }
 
 .close i{
