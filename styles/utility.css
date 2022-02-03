@@ -498,11 +498,11 @@ textarea {
 .modal-container{
   display: flex;
   justify-content: space-evenly;
-  margin: 60px 16px 50px 16px;
+  margin: 60px 16px 0px 16px;
 	border: 1px solid #dfe1e6;
 	border-radius: 16px;
 	min-width: 343px;
-	min-height: 713px;
+  height: 100%;
 	padding: 18px 16px;
 
 }

@@ -41,18 +41,18 @@ const projectDatas = [
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
 		liveVersion: 'See Live',
-		source: 'See source'
+		source: 'See source',
 	},
   {
 		projectTitle: 'Keeping track of hundred of components',
 		description:
 			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-		featuredImage: "../Portfolio/images/SnapshootPortfolio.png",
+    	featuredImage: './images/SnapshootPortfolio.png',
 		technologies: ['html', 'css', 'javascript'],
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
 		liveVersion: 'See Live',
-		source: 'See source'
+		source: 'See source',
 	},
 	{
 		projectTitle: 'Keeping track of hundred of components',
@@ -63,7 +63,7 @@ const projectDatas = [
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
 		liveVersion: 'See Live',
-		source: 'See source'
+		source: 'See source',
 	},
 	{
 		projectTitle: 'Keeping track of hundred of components',
@@ -74,7 +74,7 @@ const projectDatas = [
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
 		liveVersion: 'See Live',
-		source: 'See source'
+		source: 'See source',
 	},
 ]
 
