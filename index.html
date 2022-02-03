@@ -316,22 +316,22 @@
             <div class="contact-me" id="Contact">
                 <h2 class="heading">I'm always interested in hearing about new projects, so if you'd like to chat please
                     get in touch.</h2>
-                <form class="contact-form" action="https://formspree.io/f/mwkyvnpq" method="post">
-                    <div class="form-group">
-                        <input type="text" name="fullname" placeholder="Full name" class="form-control" maxlength="30"
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email" class="form-control" maxlength="30"
-                            required />
-                    </div>
-                    <div class="text-group">
-                        <textarea name="body" placeholder="Enter text here" cols="30" rows="10" maxlength="500"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-form-submit">Get in touch</button>
-                </form>
-                
+                    <form id="signup" class="contact-form" action="https://formspree.io/f/mwkyvnpq" method="post">
+                        <div class="form-group">
+                            <input type="text" name="fullname" placeholder="Full name" class="form-control" maxlength="30"
+                                required />
+                        </div>
+                        <div class="form-group field">
+                           <label for="email"></label>
+                              <input type="text" id="email" name="email" placeholder="Email" class="form-control" maxlength="30" required />
+                              <small></small>
+                        </div>
+                        <div class="text-group">
+                            <textarea name="body" placeholder="Enter text here" cols="30" rows="10" maxlength="500"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-form-submit">Get in touch</button>
+                    </form>                  
                 <div>
                     <img class="footer-img" src="./images/illustration-contact-form.png" alt="contact-form-icon" />
                 </div>

@@ -392,6 +392,15 @@ div.contact-me {
   margin: 15px 0;
 }
 
+.field small {
+  color: #dc3545;
+  width: 50vw;
+  height: 48px;
+  border-radius: 4px;
+
+  font-size: large;
+}
+
 .form-control {
   width: 100%;
   height: inherit;
@@ -909,5 +918,17 @@ p.modal-text-content{
     border-radius: 4px;
     align-self: center;
     font-size: 15px;
+  }
+
+  .field small {
+    position: absolute;
+    color: #dc3545;
+    width: 50vw;
+    height: 48px;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 15px 0;
+    padding-top: 10em;
+    font-size: x-large;
   }
 }

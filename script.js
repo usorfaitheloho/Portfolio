@@ -134,3 +134,58 @@ document.querySelectorAll('.close').forEach(close => {
 		document.querySelectorAll('.modal').forEach(modal => (modal.style.display = 'none'));
 	});
 });
+
+// form validation
+
+const text = document.getElementById('email');
+function showMessage(input, message, type) {
+	const msg = input.parentNode.querySelector("small");
+	msg.innerText = message;
+	input.className = type ? "success" : "error";
+	return type;
+}
+
+function showError(input, message) {
+	return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+	return showMessage(input, "", true);
+}
+
+function hasValue(input, message) {
+	if (input.value.trim() === "") {
+		return showError(input, message);
+	}
+	return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+
+	const emailRegex = /^([a-z0-9._]+)@([a-z0-9])+.([a-z]+)(.[a-z]+)?$/;
+	const email = input.value.trim();
+	if (!emailRegex.test(email)) {
+		return showError(input, invalidMsg);
+	}
+	return true;
+}
+
+const form = document.querySelector("#signup");
+
+const EMAIL_REQUIRED = "Please enter your email";
+const EMAIL_INVALID = "Enter valid Email using small letter only";
+
+form.addEventListener("submit", function (event) {
+	
+	event.preventDefault();
+
+		let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+		if (emailValid) {
+      form.submit();
+	}
+});
+
+// form validation end
