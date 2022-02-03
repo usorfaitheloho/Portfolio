@@ -29,65 +29,59 @@ function hideMenu() {
 changeIcon();
 hideMenu();
 
-//Project section dynamic load and pop-up window implementation
+// Project section dynamic load and pop-up window implementation
 
 const projectDatas = [
-	{
-		projectTitle: 'Keeping track of hundred of components',
-		description:     
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-		featuredImage: './images/SnapshootPortfolio.png',
-		technologies: ['html', 'css', 'javascript'],
-    liveVersionImage: ['./images/seeLiveIcon.png'],
-    sourceImage: ['./images/Vector.png'],
-		liveVersion: 'See Live',
-		source: 'See source',
-	},
   {
-		projectTitle: 'Keeping track of hundred of components',
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    	featuredImage: './images/SnapshootPortfolio.png',
-		technologies: ['html', 'css', 'javascript'],
+    projectTitle: 'Keeping track of hundred of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './images/SnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
-		liveVersion: 'See Live',
-		source: 'See source',
-	},
-	{
-		projectTitle: 'Keeping track of hundred of components',
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-		featuredImage: "./images/SnapshootPortfolio.png",
-		technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'See Live',
+    source: 'See source',
+  },
+  {
+    projectTitle: 'Keeping track of hundred of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './images/SnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
-		liveVersion: 'See Live',
-		source: 'See source',
-	},
-	{
-		projectTitle: 'Keeping track of hundred of components',
-		description:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-		featuredImage: "./images/SnapshootPortfolio.png",
-		technologies: ['html', 'css', 'javascript'],
+    liveVersion: 'See Live',
+    source: 'See source',
+  },
+  {
+    projectTitle: 'Keeping track of hundred of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './images/SnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
     liveVersionImage: ['./images/seeLiveIcon.png'],
     sourceImage: ['./images/Vector.png'],
-		liveVersion: 'See Live',
-		source: 'See source',
-	},
-]
+    liveVersion: 'See Live',
+    source: 'See source',
+  },
+  {
+    projectTitle: 'Keeping track of hundred of components',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    featuredImage: './images/SnapshootPortfolio.png',
+    technologies: ['html', 'css', 'javascript'],
+    liveVersionImage: ['./images/seeLiveIcon.png'],
+    sourceImage: ['./images/Vector.png'],
+    liveVersion: 'See Live',
+    source: 'See source',
+  },
+];
 
-document.querySelector('.modals').innerHTML = 
-projectDatas.map(data => `
+document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
 <div class="modal">
 <div class="modal-container">
-  <div class="modal-wrapper">
-    <div class="close">	<i class="fa fa-times fa-1x"></i></div>
-  <div class="project-image">
-    <img src= ${data.featuredImage}
-        alt="Project Image 1"
-         />
+<div class="modal-wrapper">
+<div class="close">
+<i class="fa fa-times fa-1x"></i>
+</div>
+  <div class="project-image"><img src= ${data.featuredImage} alt="Project Image 1" />
    </div>
 <div class="modal-project-desc-tech-details">
     <h4 class="project-title"> ${data.projectTitle}
@@ -111,26 +105,23 @@ projectDatas.map(data => `
 </div>
 </div>
 </div>
-</div>`
-)
+</div>`);
 
 // event listeners for opening modal on button click
-let modalButtons = Array.from(document.querySelectorAll('.btn'));
-let modals = Array.from(document.querySelectorAll('.modal'));
+const modalButtons = Array.from(document.querySelectorAll('.btn'));
+const modals = Array.from(document.querySelectorAll('.modal'));
 
+const modalButtonZip = modalButtons.map((button, i) => [button, modals[i]]);
 
-let modalButtonZip = modalButtons.map((button, i) => {
-  	console.log([button, modals[i]]);
-  	return [button, modals[i]];
-});
-
-modalButtonZip.forEach(pair => {
-	pair[0].addEventListener('click', () => (pair[1].style.display = 'block'));
+modalButtonZip.forEach((pair) => {
+  pair[0].addEventListener('click', () => {
+    pair[1].style.display = 'block';
+  });
 });
 
 // event listener for closing modal on button click
-document.querySelectorAll('.close').forEach(close => {
-	close.addEventListener('click', () => {
-		document.querySelectorAll('.modal').forEach(modal => (modal.style.display = 'none'));
-	});
+document.querySelectorAll('.close').forEach((close) => {
+  close.addEventListener('click', () => {
+    document.querySelectorAll('.modal').forEach((modal) => { modal.style.display = 'none'; });
+  });
 });
