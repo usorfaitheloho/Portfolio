@@ -1,3 +1,4 @@
+// Mobile menu navigation functionality
 const container = document.getElementsByClassName('toggle-menu')[0];
 const icon = document.querySelector('.hamburger .fa-bars');
 const logo = document.querySelector('.logo');
@@ -18,12 +19,3 @@ function changeIcon() {
     logo.style.visibility = 'visible';
   }
 }
-
-function hideMenu() {
-  container.style.visibility = 'hidden ';
-  logo.style.visibility = 'visible';
-  icon.classList.toggle('fa-times');
-  icon.classList.toggle('fa-bars');
-}
-changeIcon();
-hideMenu();

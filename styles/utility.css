@@ -186,6 +186,14 @@ section.about-me {
   color: #505f79;
 }
 
+.project_contents {
+  display: grid;
+  row-gap: 18px;
+  justify-content: center;
+  padding: 74px 24px;
+  list-style-type: none;
+}
+
 section.recent-works {
   margin-top: 20px;
 }
@@ -472,6 +480,126 @@ textarea {
   line-height: 20px;
   color: #344563;
 }
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    animation: modalopen 1s ease-out;
+    display: none;
+  }
+  
+
+.modal-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 16px 50px 16px;
+	border: 1px solid #dfe1e6;
+	border-radius: 16px;
+	min-width: 343px;
+	min-height: 713px;
+	padding: 18px 16px;
+
+}
+.modal-wrapper{
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  border-radius: 18px;
+  width: 378px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.project-image{
+  margin-top: 20px;
+}
+.project-image img{
+  width: 20px;
+  height: 20px;
+}
+
+.close i{
+  display: flex;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right:-50px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-project-desc-tech-details {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #344563;
+  padding-left: 20px;
+  line-height: 32px;
+}
+
+.tech-list-modal-container {
+  display: flex;
+  width: 100%;
+  margin: 12px 20px 0px 0 ;
+  justify-items: normal;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 75%;
+  
+}
+
+li.project-technologies {
+  border-radius: 8px;
+  background: #EBF0EE;
+  padding: 12px;
+  
+}
+
+li.project-technologies p {
+  color: #3A4A42;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+p.modal-text-content{
+ margin: 20px 12px 12px;
+ line-height: 20px;
+}
+
+.modal-buttons .btn{
+  display: inline-flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #36b37e;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+  align-self: center;
+  font-size: 15px;
+}
+
 
 @media screen and (min-width: 992px) {
   .desktop_nav {
@@ -699,5 +827,89 @@ textarea {
 
   hr {
     margin-top: 70px;
+  }
+  .modal-container{
+    display: flex;
+    justify-content: space-evenly;
+    left: 0px;
+    top: 0px;
+  }
+  .modal-wrapper{
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 1083px;
+    width: 920px;
+    padding: 20px 20px 20px;
+    margin: 50px 20px 20px 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .project-image{
+    margin-top: 20px;
+      content: url('../images/Snapshoot\ Portfolio\ Desktop.png');
+   
+  }
+  
+  .modal-project-desc-tech-details {
+    margin-top: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .project-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #344563;
+    padding-left: 20px;
+    line-height: 32px;
+  }
+  
+  .tech-list-modal-container {
+    display: flex;
+    width: 100%;
+    margin: 12px 20px 0px 0 ;
+    justify-items: normal;
+    
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 32%;
+    
+  }
+  
+  li.project-technologies {
+    border-radius: 8px;
+    background: #EBF0EE;
+    padding: 12px;
+    
+  }
+  
+  li.project-technologies p {
+    color: #3A4A42;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  p.modal-text-content{
+   margin: 20px 12px 12px;
+   line-height: 20px;
+  }
+  
+  .modal-buttons .btn{
+    display: inline-flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #36b37e;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    align-self: center;
+    font-size: 15px;
   }
 }
