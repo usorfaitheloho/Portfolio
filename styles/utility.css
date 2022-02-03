@@ -511,7 +511,7 @@ textarea {
   border: 1px solid #DFE1E6;
   border-radius: 18px;
   width: 378px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -585,7 +585,9 @@ p.modal-text-content{
   flex-direction: row;
   width: 45%;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   background-color: #36b37e;
   color: #fff;
   font-size: 16px;
@@ -833,7 +835,7 @@ p.modal-text-content{
   .modal-wrapper{
     background: #FFFFFF;
     border-radius: 8px;
-    height: 1083px;
+    height: 100%;
     width: 920px;
     padding: 20px 20px 20px;
     margin: 50px 20px 20px 20px;
