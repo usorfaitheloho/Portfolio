@@ -138,14 +138,13 @@ section.hero {
   margin: 28px 0;
 }
 
-section.about-me {
+.about-me {
   margin-top: 30px;
-  position: relative;
 }
 
 .about-me-container {
-  position: relative;
-  top: -70px;
+  /* position: relative;
+  top: -70px; */
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -154,6 +153,10 @@ section.about-me {
   background-position: left;
   background-repeat: no-repeat;
 }
+
+/* .about-wrapper{
+  margin-top: 2300px;
+} */
 
 .about-me-icon {
   float: right;
@@ -227,6 +230,8 @@ span.bottom {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 16px;
+  background-color: #ffff;
+  width: 100%;
 }
 
 .project-container-card {
@@ -235,16 +240,17 @@ span.bottom {
   border-radius: 8px;
   margin-top: 1.5rem;
   height: 474px;
+  width: 90%;
   position: relative;
 }
 
 .project-desc-tech-details {
   display: flex;
+  position: absolute;
   flex-direction: column;
+  bottom: 0;
   justify-content: center;
   height: 222px;
-  position: absolute;
-  bottom: 0;
   background: #fff;
   border-radius: 8px;
   width: 100%;
@@ -290,6 +296,19 @@ h4.project-desc {
 }
 
 .btn.btn-projects {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #36b37e;
+  color: #fff;
+  font-size: 16px;
+  min-width: 122px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+  align-self: center;
+}
+
+.btn.btn-resume {
   margin-top: 20px;
   margin-bottom: 10px;
   background: #36b37e;
@@ -510,7 +529,7 @@ textarea {
   border: 1px solid #dfe1e6;
   border-radius: 18px;
   width: 378px;
-  height: 132vh;
+  height: 114vh;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -522,16 +541,17 @@ textarea {
 }
 
 .close i {
-  display: flex;
-  color: #aaa;
+  position: absolute;
+  color: #ffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-right: -50px;
+  padding-top: 12px;
+  padding-left: 274px;
 }
 
-.close:hover,
-.close:focus {
+.close i :hover,
+.close i :focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -583,7 +603,7 @@ p.modal-text-content {
   width: 45%;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-left: 10px;
   background-color: #36b37e;
   color: #fff;
@@ -670,12 +690,11 @@ p.modal-text-content {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 4.5vw;
   }
 
   .project-container-card {
-    width: 28vw;
-    height: 50vh;
+    width: 32vw;
+    height: 60vh;
   }
 
   .programming-skills-container {
@@ -690,7 +709,6 @@ p.modal-text-content {
 
   .about-me-container {
     position: relative;
-    top: -70px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -822,34 +840,65 @@ p.modal-text-content {
     margin-top: 70px;
   }
 
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    animation: modalopen 1s ease-out;
+    display: none;
+  }
+
   .modal-container {
     display: flex;
+    position: absolute;
     justify-content: space-evenly;
-    left: 0;
-    top: 0;
+    margin: 60px 16px 0 16px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    width: 85%;
+    height: 100%;
+    padding: 18px 16px;
   }
 
   .modal-wrapper {
     background: #fff;
-    border-radius: 8px;
-    height: 100%;
-    width: 920px;
-    padding: 20px 20px 20px;
-    margin: 50px 20px 20px 20px;
+    border: 1px solid #dfe1e6;
+    border-radius: 18px;
+    width: 75%;
+    height: 125vh;
+    padding: 5px 5px 10px 5px;
+    margin: 0 auto;
     display: flex;
     flex-flow: column;
     align-items: center;
   }
 
-  .project-image {
+  .project-image img {
     margin-top: 20px;
-    content: url('../images/Snapshoot\ Portfolio\ Desktop.png');
+    content: url('../images/SnapshootPortfolioDesktop.png');
+    width: 100%;
+  }
+
+  .close i {
+    position: absolute;
+    color: #ebecf0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 415px;
   }
 
   .modal-project-desc-tech-details {
     margin-top: 15px;
     text-align: left;
-    display: flex;
     flex-direction: column;
     width: 100%;
   }
@@ -864,7 +913,7 @@ p.modal-text-content {
 
   .tech-list-modal-container {
     display: flex;
-    width: 100%;
+    width: 30%;
     margin: 12px 20px 0 0;
     justify-items: normal;
     flex-flow: row nowrap;
@@ -891,15 +940,15 @@ p.modal-text-content {
   .modal-buttons .btn {
     display: inline-flex;
     flex-direction: row;
-    width: 45%;
     justify-content: space-between;
-    margin-top: 20px;
-    background-color: #36b37e;
-    color: #fff;
     font-size: 16px;
     letter-spacing: 0.03em;
     text-align: center;
     border-radius: 4px;
     align-self: center;
+    width: 128px;
+    position: relative;
+    bottom: 170px;
+    left: 650px;
   }
 }
