@@ -10,6 +10,8 @@ A site for my portfolio
 
 - Git and Github
 
+- Javascript
+
 
 
 ## Getting started
