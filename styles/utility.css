@@ -862,7 +862,7 @@ p.modal-text-content {
     border-radius: 16px;
     width: 100%;
     width: 85%;
-    height: 100%;
+ 
     padding: 18px 16px;
   }
 
@@ -871,7 +871,7 @@ p.modal-text-content {
     border: 1px solid #dfe1e6;
     border-radius: 18px;
     width: 75%;
-    height: 85vh;
+    min-height: 125vh;
     padding: 5px 5px 10px 5px;
     margin: 0 auto;
     display: flex;
@@ -893,7 +893,7 @@ p.modal-text-content {
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 10px;
-    padding-left: 325px;
+    padding-left: 415px;
   }
 
   .modal-project-desc-tech-details {
@@ -945,10 +945,10 @@ p.modal-text-content {
     letter-spacing: 0.03em;
     text-align: center;
     border-radius: 4px;
-    align-self: center;
+    align-self: flex-end;
     width: 128px;
     position: relative;
-    bottom: 180px;
-    left: 410px;
+    bottom: 170px;
+    left: 650px;
   }
 }
