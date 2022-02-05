@@ -78,6 +78,10 @@ ul {
   animation: rotation 5s;
 }
 
+.live-source-div {
+  display: none;
+}
+
 @keyframes rotation {
   0% {
     top: 20px;
@@ -138,22 +142,25 @@ section.hero {
   margin: 28px 0;
 }
 
-section.about-me {
+.about-me {
   margin-top: 30px;
-  position: relative;
 }
 
 .about-me-container {
-  position: relative;
-  top: -70px;
+  /* position: relative;
+  top: -70px; */
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
-  background-image: url('../images/illustration- about me- mobile.png');
+  background-image: url('../images/illustration-about-me-mobile.png');
   background-position: left;
   background-repeat: no-repeat;
 }
+
+/* .about-wrapper{
+  margin-top: 2300px;
+} */
 
 .about-me-icon {
   float: right;
@@ -184,6 +191,14 @@ section.about-me {
 
 .social-links i {
   color: #505f79;
+}
+
+.project_contents {
+  display: grid;
+  row-gap: 18px;
+  justify-content: center;
+  padding: 74px 24px;
+  list-style-type: none;
 }
 
 section.recent-works {
@@ -219,6 +234,10 @@ span.bottom {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 16px;
+  background-color: #ffff;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
 }
 
 .project-container-card {
@@ -227,16 +246,19 @@ span.bottom {
   border-radius: 8px;
   margin-top: 1.5rem;
   height: 474px;
+  width: 90%;
+  justify-content: center;
   position: relative;
+  align-self: center;
 }
 
 .project-desc-tech-details {
   display: flex;
+  position: absolute;
   flex-direction: column;
+  bottom: 0;
   justify-content: center;
   height: 222px;
-  position: absolute;
-  bottom: 0;
   background: #fff;
   border-radius: 8px;
   width: 100%;
@@ -282,6 +304,19 @@ h4.project-desc {
 }
 
 .btn.btn-projects {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: #36b37e;
+  color: #fff;
+  font-size: 16px;
+  min-width: 122px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+  align-self: center;
+}
+
+.btn.btn-resume {
   margin-top: 20px;
   margin-bottom: 10px;
   background: #36b37e;
@@ -473,6 +508,138 @@ textarea {
   color: #344563;
 }
 
+.modal {
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  animation: modalopen 1s ease-out;
+  display: none;
+}
+
+.modal-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px 16px 0 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  min-width: 343px;
+  padding: 18px 16px;
+}
+
+.modal-wrapper {
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 18px;
+  width: 378px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.project-image {
+  margin-top: 20px;
+  position: relative;
+}
+
+#close-desktop {
+  display: none;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  padding-bottom: 10px;
+  right: 20px;
+  top: -20px;
+}
+
+.close i {
+  color: #ffff;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 32px;
+}
+
+.close i :hover,
+.close i :focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-project-desc-tech-details {
+  margin-top: 15px;
+  text-align: left;
+  padding: 0 5px 0 5px;
+}
+
+.project-title {
+  color: #344563;
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 20px;
+  line-height: 32px;
+}
+
+.tech-list-modal-container {
+  display: flex;
+  width: 100%;
+  margin: 12px 20px 0 0;
+  justify-items: normal;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+li.project-technologies {
+  border-radius: 8px;
+  background: #ebf0ee;
+  padding: 12px;
+}
+
+li.project-technologies p {
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+p.modal-text-content {
+  margin: 20px 12px 12px;
+  line-height: 20px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-buttons .btn {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  background-color: #36b37e;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border-radius: 4px;
+  align-self: center;
+}
+
 @media screen and (min-width: 992px) {
   .desktop_nav {
     display: flex;
@@ -549,12 +716,11 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 4.5vw;
   }
 
   .project-container-card {
-    width: 28vw;
-    height: 50vh;
+    width: 32vw;
+    height: 60vh;
   }
 
   .programming-skills-container {
@@ -569,7 +735,6 @@ textarea {
 
   .about-me-container {
     position: relative;
-    top: -70px;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -699,5 +864,139 @@ textarea {
 
   hr {
     margin-top: 70px;
+  }
+
+  .modal {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    animation: modalopen 1s ease-out;
+    display: none;
+  }
+
+  .modal-container {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    margin: 60px 16px 0 16px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    width: 85%;
+    padding: 18px 16px;
+  }
+
+  .modal-wrapper {
+    background: #fff;
+    position: relative;
+    border: 1px solid #dfe1e6;
+    border-radius: 18px;
+    width: 75%;
+    min-height: 127vh;
+    padding: 5px 5px 10px 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: initial;
+  }
+
+  .project-image img {
+    margin-top: 20px;
+    content: url('../images/SnapshootPortfolioDesktop.png');
+    width: 100%;
+  }
+
+  .close i {
+    color: #7782af;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  #close-desktop {
+    display: block;
+  }
+
+  .close-mobile {
+    display: none;
+  }
+
+  .modal-project-desc-tech-details {
+    margin-top: 15px;
+    text-align: left;
+
+    /* flex-direction: column; */
+    width: 100%;
+  }
+
+  .project-title {
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    color: #344563;
+    padding-left: initial;
+    line-height: initial;
+  }
+
+  .tech-list-modal-container {
+    display: flex;
+    width: 30%;
+    margin: 12px 20px 0 0;
+    justify-items: normal;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  li.project-technologies {
+    border-radius: 8px;
+    background: #ebf0ee;
+    padding: 12px;
+  }
+
+  li.project-technologies p {
+    color: #3a4a42;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  p.modal-text-content {
+    margin: 20px 12px 12px;
+    line-height: 20px;
+  }
+
+  .modal-buttons {
+    display: flex;
+  }
+
+  .modal-buttons .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border-radius: 4px;
+    align-self: flex-end;
+
+    /* width: 128px; */
+  }
+
+  .live-source-div {
+    display: flex;
+    flex: 1;
+  }
+
+  .live-source-mobile {
+    display: none;
   }
 }
