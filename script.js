@@ -224,3 +224,25 @@ form.addEventListener('submit', (postIt) => {
     postIt.preventDefault();
   }
 });
+
+// local storage start here
+
+form.addEventListener('input', () => {
+  const jsonForm = {
+    name: document.querySelector('.form-control1').value,
+    email: document.querySelector('.form-control2').value,
+    textArea: document.querySelector('.form-control3').value
+  };
+
+  localStorage.setItem('contactWay', JSON.stringify(jsonForm));
+});
+
+const nonJsonForm = JSON.parse(localStorage.getItem('contactWay'));
+if(nonJsonForm !== null) {
+  document.querySelector('.form-control1').value = nonJsonForm.name;
+  document.querySelector('.form-control2').value = nonJsonForm.email;
+  document.querySelector('.form-control3').value = nonJsonForm.textArea;
+}
+else {
+  return {}
+}
