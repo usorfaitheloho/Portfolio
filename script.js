@@ -98,10 +98,12 @@ document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
 <div class="modal">
 <div class="modal-container">
 <div class="modal-wrapper">
-<div class="close">
+<div class="close" id="close-desktop">
 <i class="fa fa-times fa-1x"></i>
 </div>
-  <div class="project-image"><img src= ${data.featuredImage} alt="Project Image 1" />
+  <div class="project-image"><div class="close close-mobile">
+  <i class="fa fa-times fa-1x"></i>
+  </div><img src= ${data.featuredImage} alt="Project Image 1" />
    </div>
 <div class="modal-project-desc-tech-details">
   <div class=" live-source-div"> 

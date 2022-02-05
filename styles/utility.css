@@ -546,6 +546,10 @@ textarea {
 
 .project-image {
   margin-top: 20px;
+  position: relative;
+}
+#close-desktop{
+  display: none;
 }
 
 .close {
@@ -554,7 +558,8 @@ textarea {
   align-items: flex-end;
   position: absolute;
   padding-bottom: 10px;
-  left: 330px;
+  right: 20px;
+  top: -20px;
 }
 
 .close i {
@@ -562,8 +567,6 @@ textarea {
   font-size: 28px;
   font-weight: bold;
   padding-top: 32px;
-
-  /* padding-left: 258px; */
 }
 
 .close i :hover,
@@ -923,6 +926,12 @@ p.modal-text-content {
     top: 15px;
     padding-bottom: 10px;
     right: 10px;
+  }
+  #close-desktop{
+    display: block;
+  }
+  .close-mobile{
+    display: none;
   }
 
   .modal-project-desc-tech-details {
