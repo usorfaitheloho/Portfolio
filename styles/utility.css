@@ -537,7 +537,6 @@ textarea {
   border: 1px solid #dfe1e6;
   border-radius: 18px;
   width: 378px;
-
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -548,7 +547,8 @@ textarea {
   margin-top: 20px;
   position: relative;
 }
-#close-desktop{
+
+#close-desktop {
   display: none;
 }
 
@@ -922,10 +922,12 @@ p.modal-text-content {
     right: 10px;
     cursor: pointer;
   }
-  #close-desktop{
+
+  #close-desktop {
     display: block;
   }
-  .close-mobile{
+
+  .close-mobile {
     display: none;
   }
 
