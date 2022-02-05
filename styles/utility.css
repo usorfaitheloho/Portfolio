@@ -539,6 +539,7 @@ textarea {
 .project-image {
   margin-top: 20px;
 }
+
 .close {
   /* float: right; */
   justify-content: flex-end;
@@ -555,8 +556,6 @@ textarea {
   padding-top: 32px;
   padding-left: 258px;
 }
-
-
 
 .close i :hover,
 .close i :focus {
@@ -879,7 +878,7 @@ p.modal-text-content {
     border: 1px solid #dfe1e6;
     border-radius: 18px;
     width: 75%;
-    min-height: 125vh;
+    min-height: 127vh;
     padding: 5px 5px 10px 5px;
     margin: 0 auto;
     display: flex;
@@ -899,9 +898,8 @@ p.modal-text-content {
     font-size: 28px;
     font-weight: bold;
     padding: 4px;
-
-   
   }
+
   .close {
     /* float: right; */
     display: flex;
@@ -965,8 +963,7 @@ p.modal-text-content {
     align-self: flex-end;
     width: 128px;
     position: relative;
-    bottom: 195px;
-    left: 53%;
-
+    bottom: 174px;
+    left: 69%;
   }
 }
