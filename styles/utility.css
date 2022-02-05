@@ -839,7 +839,10 @@ input.success{
     font-weight: bold;
     font-size: 17px;
     border-radius: 6px;
-    margin-right: 565px;
+    /* margin-right: 600px; */
+    position: absolute;
+    left: 650px;
+    top: 350px;
   }
 
   hr {
@@ -934,9 +937,9 @@ input.success{
 
 #warning {
   color: rgb(206, 47, 47);
-  padding: 17px 0;
+  padding: 5px 0;
   border-radius: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 300;
 }
