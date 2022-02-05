@@ -539,16 +539,24 @@ textarea {
 .project-image {
   margin-top: 20px;
 }
+.close {
+  /* float: right; */
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+}
 
 .close i {
-  position: absolute;
+  /* position: absolute; */
   color: #ffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  padding-top: 12px;
-  padding-left: 274px;
+  padding-top: 32px;
+  padding-left: 258px;
 }
+
+
 
 .close i :hover,
 .close i :focus {
@@ -862,12 +870,12 @@ p.modal-text-content {
     border-radius: 16px;
     width: 100%;
     width: 85%;
- 
     padding: 18px 16px;
   }
 
   .modal-wrapper {
     background: #fff;
+    position: relative;
     border: 1px solid #dfe1e6;
     border-radius: 18px;
     width: 75%;
@@ -876,7 +884,7 @@ p.modal-text-content {
     margin: 0 auto;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: initial;
   }
 
   .project-image img {
@@ -886,14 +894,23 @@ p.modal-text-content {
   }
 
   .close i {
-    position: absolute;
-    color: #ebecf0;
+    color: #7782af;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    padding-top: 5px;
+    padding: 4px;
+
+   
+  }
+  .close {
+    /* float: right; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 15px;
     padding-bottom: 10px;
-    padding-left: 415px;
+    right: 10px;
   }
 
   .modal-project-desc-tech-details {
@@ -948,7 +965,8 @@ p.modal-text-content {
     align-self: flex-end;
     width: 128px;
     position: relative;
-    bottom: 170px;
-    left: 650px;
+    bottom: 195px;
+    left: 53%;
+
   }
 }
