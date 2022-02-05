@@ -78,6 +78,10 @@ ul {
   animation: rotation 5s;
 }
 
+.live-source-div {
+  display: none;
+}
+
 @keyframes rotation {
   0% {
     top: 20px;
@@ -232,6 +236,8 @@ span.bottom {
   grid-gap: 16px;
   background-color: #ffff;
   width: 100%;
+  justify-content: center;
+  align-content: center;
 }
 
 .project-container-card {
@@ -241,7 +247,9 @@ span.bottom {
   margin-top: 1.5rem;
   height: 474px;
   width: 90%;
+  justify-content: center;
   position: relative;
+  align-self: center;
 }
 
 .project-desc-tech-details {
@@ -529,7 +537,7 @@ textarea {
   border: 1px solid #dfe1e6;
   border-radius: 18px;
   width: 378px;
-  height: 114vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -541,20 +549,21 @@ textarea {
 }
 
 .close {
-  /* float: right; */
+  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
+  padding-bottom: 10px;
+  left: 330px;
 }
 
 .close i {
-  /* position: absolute; */
   color: #ffff;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   padding-top: 32px;
-  padding-left: 258px;
+
+  /* padding-left: 258px; */
 }
 
 .close i :hover,
@@ -567,12 +576,13 @@ textarea {
 .modal-project-desc-tech-details {
   margin-top: 15px;
   text-align: left;
+  padding: 0 5px 0 5px;
 }
 
 .project-title {
+  color: #344563;
   font-size: 32px;
   font-weight: 600;
-  color: #344563;
   padding-left: 20px;
   line-height: 32px;
 }
@@ -604,10 +614,16 @@ p.modal-text-content {
   line-height: 20px;
 }
 
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-buttons .btn {
   display: inline-flex;
   flex-direction: row;
-  width: 45%;
+  align-items: center;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -901,7 +917,6 @@ p.modal-text-content {
   }
 
   .close {
-    /* float: right; */
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -914,16 +929,18 @@ p.modal-text-content {
   .modal-project-desc-tech-details {
     margin-top: 15px;
     text-align: left;
-    flex-direction: column;
+
+    /* flex-direction: column; */
     width: 100%;
   }
 
   .project-title {
-    font-size: 32px;
-    font-weight: 600;
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
     color: #344563;
-    padding-left: 20px;
-    line-height: 32px;
+    padding-left: initial;
+    line-height: initial;
   }
 
   .tech-list-modal-container {
@@ -952,8 +969,12 @@ p.modal-text-content {
     line-height: 20px;
   }
 
+  .modal-buttons {
+    display: flex;
+  }
+
   .modal-buttons .btn {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
@@ -961,9 +982,16 @@ p.modal-text-content {
     text-align: center;
     border-radius: 4px;
     align-self: flex-end;
-    width: 128px;
-    position: relative;
-    bottom: 174px;
-    left: 69%;
+
+    /* width: 128px; */
+  }
+
+  .live-source-div {
+    display: flex;
+    flex: 1;
+  }
+
+  .live-source-mobile {
+    display: none;
   }
 }

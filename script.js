@@ -104,8 +104,13 @@ document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
   <div class="project-image"><img src= ${data.featuredImage} alt="Project Image 1" />
    </div>
 <div class="modal-project-desc-tech-details">
-    <h4 class="project-title"> ${data.projectTitle}
-      </h4>
+  <div class=" live-source-div"> 
+  <h4 class="project-title"> ${data.projectTitle}</h4> 
+  <div class="modal-buttons">
+  <button class="btn btn-projects" type="button">${data.liveVersion}<img src= ${data.liveVersionImage} /></button>
+  <button class="btn btn-projects-source" type="button">${data.source}<img src= ${data.sourceImage} /></button>
+  </div>
+  </div>  
     <ul class="tech-list-modal-container">
         <li class="project-technologies">
             <p class="technology">${data.technologies[0]}</p>
@@ -118,7 +123,7 @@ document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
         </li>
     </ul>
      <p class="modal-project-desc-tech-details">${data.description}</p> 
-    <div class="modal-buttons">
+    <div class="modal-buttons live-source-mobile">
     <button class="btn btn-projects-live" type="button">${data.liveVersion}<img src= ${data.liveVersionImage} /></button>
     <button class="btn btn-projects-source" type="button">${data.source}<img src= ${data.sourceImage} /></button>
     </div>
