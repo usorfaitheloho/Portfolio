@@ -912,20 +912,15 @@ p.modal-text-content {
 
   .close i {
     color: #7782af;
-    float: right;
     font-size: 28px;
     font-weight: bold;
-    padding: 4px;
   }
 
   .close {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     position: absolute;
-    top: 15px;
-    padding-bottom: 10px;
+    top: -20px;
     right: 10px;
+    cursor: pointer;
   }
   #close-desktop{
     display: block;
