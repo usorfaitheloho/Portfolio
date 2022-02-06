@@ -238,6 +238,11 @@ form.addEventListener('input', () => {
 });
 
 const nonJsonForm = JSON.parse(localStorage.getItem('contactWay'));
-document.querySelector('.form-control1').value = nonJsonForm.name;
-document.querySelector('.form-control2').value = nonJsonForm.email;
-document.querySelector('.form-control3').value = nonJsonForm.textArea;
+if(nonJsonForm !== null) {
+  document.querySelector('.form-control1').value = nonJsonForm.name;
+  document.querySelector('.form-control2').value = nonJsonForm.email;
+  document.querySelector('.form-control3').value = nonJsonForm.textArea;
+}
+else {
+  return {}
+}
