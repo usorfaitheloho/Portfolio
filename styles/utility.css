@@ -397,6 +397,7 @@ div.contact-me {
   width: 50vw;
   height: 48px;
   border-radius: 4px;
+
   font-size: large;
 }
 
@@ -488,35 +489,35 @@ textarea {
   line-height: 20px;
   color: #344563;
 }
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    animation: modalopen 1s ease-out;
+    display: none;
+  }
+  
 
-.modal {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.1);
-  animation: modalopen 1s ease-out;
-  display: none;
-}
-
-
-.modal-container {
+.modal-container{
   display: flex;
   justify-content: space-evenly;
-  margin: 60px 16px 0 16px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  min-width: 343px;
+  margin: 60px 16px 0px 16px;
+	border: 1px solid #dfe1e6;
+	border-radius: 16px;
+	min-width: 343px;
   height: 100%;
-  padding: 18px 16px;
-}
+	padding: 18px 16px;
 
-.modal-wrapper {
-  background: #fff;
-  border: 1px solid #dfe1e6;
+}
+.modal-wrapper{
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
   border-radius: 18px;
   width: 378px;
   height: 132vh;
@@ -525,18 +526,17 @@ textarea {
   flex-flow: column;
   align-items: center;
 }
-
-.project-image {
+.project-image{
   margin-top: 20px;
 }
 
-.close i {
+.close i{
   display: flex;
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin-right: -50px;
+  margin-right:-50px;
 }
 
 .close:hover,
@@ -562,31 +562,34 @@ textarea {
 .tech-list-modal-container {
   display: flex;
   width: 100%;
-  margin: 12px 20px 0 0;
+  margin: 12px 20px 0px 0 ;
   justify-items: normal;
   justify-content: space-evenly;
   flex-flow: row nowrap;
   align-items: center;
+  width: 75%;
+  
 }
 
 li.project-technologies {
   border-radius: 8px;
-  background: #ebf0ee;
+  background: #EBF0EE;
   padding: 12px;
+  
 }
 
 li.project-technologies p {
-  color: #3a4a42;
+  color: #3A4A42;
   font-weight: 600;
   font-size: 12px;
 }
 
-p.modal-text-content {
-  margin: 20px 12px 12px;
-  line-height: 20px;
+p.modal-text-content{
+ margin: 20px 12px 12px;
+ line-height: 20px;
 }
 
-.modal-buttons .btn {
+.modal-buttons .btn{
   display: inline-flex;
   flex-direction: row;
   width: 45%;
@@ -601,20 +604,19 @@ p.modal-text-content {
   text-align: center;
   border-radius: 4px;
   align-self: center;
+  font-size: 15px;
 }
-
-.small {
+.small{
   color: white;
   display: block;
 }
-
-input.error {
+input.error{
   border: 1px solid red;
 }
-
-input.success {
+input.success{
   border: 1px solid green;
 }
+
 
 @media screen and (min-width: 992px) {
   .desktop_nav {
@@ -837,26 +839,23 @@ input.success {
     font-weight: bold;
     font-size: 17px;
     border-radius: 6px;
-
     /* margin-right: 600px; */
     position: absolute;
     left: 650px;
-    top: 350px;
+    top: 360px;
   }
 
   hr {
     margin-top: 70px;
   }
-
-  .modal-container {
+  .modal-container{
     display: flex;
     justify-content: space-evenly;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
   }
-
-  .modal-wrapper {
-    background: #fff;
+  .modal-wrapper{
+    background: #FFFFFF;
     border-radius: 8px;
     height: 100%;
     width: 920px;
@@ -866,12 +865,12 @@ input.success {
     flex-flow: column;
     align-items: center;
   }
-
-  .project-image {
+  .project-image{
     margin-top: 20px;
-    content: url('../images/Snapshoot\ Portfolio\ Desktop.png');
+      content: url('../images/Snapshoot\ Portfolio\ Desktop.png');
+   
   }
-
+  
   .modal-project-desc-tech-details {
     margin-top: 15px;
     text-align: left;
@@ -879,7 +878,7 @@ input.success {
     flex-direction: column;
     width: 100%;
   }
-
+  
   .project-title {
     font-size: 32px;
     font-weight: 600;
@@ -887,34 +886,38 @@ input.success {
     padding-left: 20px;
     line-height: 32px;
   }
-
+  
   .tech-list-modal-container {
     display: flex;
     width: 100%;
-    margin: 12px 20px 0 0;
+    margin: 12px 20px 0px 0 ;
     justify-items: normal;
+    
     flex-flow: row nowrap;
     align-items: center;
+    width: 32%;
+    
   }
-
+  
   li.project-technologies {
     border-radius: 8px;
-    background: #ebf0ee;
+    background: #EBF0EE;
     padding: 12px;
+    
   }
-
+  
   li.project-technologies p {
-    color: #3a4a42;
+    color: #3A4A42;
     font-weight: 600;
     font-size: 12px;
   }
-
-  p.modal-text-content {
-    margin: 20px 12px 12px;
-    line-height: 20px;
+  
+  p.modal-text-content{
+   margin: 20px 12px 12px;
+   line-height: 20px;
   }
-
-  .modal-buttons .btn {
+  
+  .modal-buttons .btn{
     display: inline-flex;
     flex-direction: row;
     width: 45%;
@@ -927,14 +930,18 @@ input.success {
     text-align: center;
     border-radius: 4px;
     align-self: center;
+    font-size: 15px;
   }
+
 }
 
 #warning {
   color: rgb(206, 47, 47);
-  padding: 5px 0;
+  padding-top: 10px 0;
   border-radius: 15px;
   font-size: 1rem;
   font-style: italic;
   font-weight: 300;
+  padding-right: 80px;
+  
 }
