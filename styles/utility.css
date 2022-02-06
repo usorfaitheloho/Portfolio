@@ -1000,3 +1000,12 @@ p.modal-text-content {
     display: none;
   }
 }
+#warning {
+  color: rgb(206, 47, 47);
+  padding-top: 10px 0;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 300;
+  padding-right: 80px;
+}
