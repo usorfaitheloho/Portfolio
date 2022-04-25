@@ -243,6 +243,3 @@ if(nonJsonForm !== null) {
   document.querySelector('.form-control2').value = nonJsonForm.email;
   document.querySelector('.form-control3').value = nonJsonForm.textArea;
 }
-else {
-  return {}
-}
