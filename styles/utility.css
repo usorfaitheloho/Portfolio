@@ -7,13 +7,14 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
-header{
+
+header {
   position: fixed;
 }
 
 .header-active {
-	background-color: #7f8cff;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #7f8cff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 ul {
