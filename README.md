@@ -15,7 +15,7 @@ A site for my portfolio
 
 ## Deployment
 
-https://usorfaitheloho.github.io/Portfolio/
+https://faithusor.netlify.app/
 
 
 
