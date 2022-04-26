@@ -7,13 +7,14 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
-header{
+
+header {
   position: fixed;
 }
 
 .header-active {
-	background-color: #7f8cff;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #7f8cff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -123,7 +124,7 @@ section.hero {
   height: 192px;
   width: 327px;
   padding: 15px 24px 63px 24px;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   line-height: 52px;
   letter-spacing: 0;
@@ -342,7 +343,7 @@ h4.project-desc {
   border-radius: 8px;
   background-color: #ebf0ee;
   border: 1px solid #c1c7d0;
-  width: 378px;
+  width: 358px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -406,7 +407,7 @@ div.contact-me {
 }
 
 .contact-me h2.heading {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: #172b4d;
