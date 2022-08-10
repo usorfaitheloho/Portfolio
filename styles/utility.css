@@ -914,15 +914,15 @@ p.modal-text-content {
     display: flex;
     flex-flow: column;
     align-items: initial;
-  } 
+  }
 
   .project-image {
     width: 100%;
   }
 
-
   .project-image img {
     margin-top: 20px;
+
     /* content: url('../images/SnapshootPortfolioDesktop.png'); */
     width: 100%;
   }
