@@ -136,39 +136,45 @@ document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
 
 const projectCard = [
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'Covid-19 Data App',
+    description: 'This is a react project that displays covid details for different countries and regions within those regions.',
+    technologies: ['React Js', 'Redux', 'jest'],
+    showImage:'./images/Covid-app2.PNG',
   },
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'NetMovie',
+    description: 'NetMovie is a web application based on an external TV Maze API that provides details about movies, showing comment section and reservations as well as booking. The API provides data about TV Shows.Ruby on Rails',
+    technologies: ['Javascript', 'css', 'html'],
+    showImage:'./images/Net-movies.PNG',
   },
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'Space-Travellers',
+    description: 'Space-Travellers Hub is a web application made for a company that provides commercial and scientific space travel services. The application allows users (future clients) to book rockets and join selected space missions.',
+    technologies: ['React', 'Redux', 'CSS'],
+    showImage:'./images/space-travellers.PNG',
   },
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'BookStore',
+    description: 'The Bookstore is a website that displays books available in bookstore. It tells you about the author,the genre of the book and chapter details. The site contain these features : list of books, add a book and remove a selected book.',
+    technologies: ['Redux', 'React', 'Css3'],
+    showImage:'./images/Book-Store.PNG',
   },
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'Awesome Books',
+    description: 'Awesome Book is a web app that enables you to make a list of books. This app was made as a project in the Microverse Program .',
+    technologies: ['Javascript', 'css', 'html'],
+    showImage:'./images/Awesome-books.PNG',
   },
   {
-    projectTitle: 'Multi-Post Stories Gain + Glory',
-    description: 'Ruby on Rails',
-    technologies: ['Ruby on Rails', 'css', 'javascript', 'html'],
+    projectTitle: 'Hackherthon',
+    description: 'Hackherthon is a website for an upcoming hack event for female Software developers , to be held in Nigeria.',
+    technologies: ['css', 'javascript', 'html'],
+    showImage:'./images/Hackherthon.PNG',
   },
 ];
 document.querySelector('.allprojects-container').innerHTML = projectCard.map((data) => `
 <div class="project-container-card">
-<div class="project-image"></div>
+<div class="project-image"><img src= ${data.showImage} alt="Project Image 1" /></div>
 <div class="project-desc-tech-details">
     <h4 class="project-desc">${data.projectTitle}</h4>
     <ul class="tech-list-container">

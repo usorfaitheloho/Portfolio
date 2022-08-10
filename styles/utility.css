@@ -157,8 +157,6 @@ section.hero {
 }
 
 .about-me-container {
-  /* position: relative;
-  top: -70px; */
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -167,10 +165,6 @@ section.hero {
   background-position: left;
   background-repeat: no-repeat;
 }
-
-/* .about-wrapper{
-  margin-top: 2300px;
-} */
 
 .about-me-icon {
   float: right;
@@ -255,7 +249,8 @@ span.bottom {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   margin-top: 1.5rem;
-  height: 474px;
+  min-height: 130px;
+  height: 400px;
   width: 90%;
   justify-content: center;
   position: relative;
@@ -367,6 +362,7 @@ h4.project-desc {
 
 img {
   vertical-align: middle;
+  width: 374px;
 }
 
 .skills-name {
@@ -553,9 +549,15 @@ textarea {
   align-items: center;
 }
 
+hr {
+  padding-top: 70px;
+}
+
 .project-image {
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
+  width: 20px;
+  min-height: 450px;
 }
 
 #close-desktop {
@@ -912,11 +914,16 @@ p.modal-text-content {
     display: flex;
     flex-flow: column;
     align-items: initial;
+  } 
+
+  .project-image {
+    width: 100%;
   }
+
 
   .project-image img {
     margin-top: 20px;
-    content: url('../images/SnapshootPortfolioDesktop.png');
+    /* content: url('../images/SnapshootPortfolioDesktop.png'); */
     width: 100%;
   }
 
@@ -944,8 +951,6 @@ p.modal-text-content {
   .modal-project-desc-tech-details {
     margin-top: 15px;
     text-align: left;
-
-    /* flex-direction: column; */
     width: 100%;
   }
 
