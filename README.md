@@ -15,7 +15,7 @@ A site for my portfolio
 
 ## Deployment
 
-https://faithusor.netlify.app/
+ [Live version](https://faithusor.netlify.app/)
 
 
 
@@ -36,8 +36,8 @@ To get a local copy up and running follow these simple example steps
 ## Author
 ### :female-doctor::skin-tone-5: Faith Usor
 - GitHub: [@githubhandle](https://github.com/usorfaitheloho)
-- Twitter: [@twitterhandle](https://twitter.com/faith chidinma usor)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/faith-usor)
+- Twitter: [@twitterhandle](https://twitter.com/faithusor16)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/faith-usor)
 
 ## Show your support
 Give a :star:️ if you like this project!
