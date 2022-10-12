@@ -113,17 +113,20 @@ section.hero {
   position: relative;
 }
 
+.social-links a {
+  font-size: 0.8rem;
+}
+
 .headline-desc {
   display: flex;
   flex-flow: column;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
 .headline-desc h1 {
-  height: 192px;
-  width: 327px;
-  padding: 15px 24px 63px 24px;
+  padding-top: 15px;
   font-size: 30px;
   font-style: normal;
   line-height: 52px;
@@ -239,7 +242,8 @@ span.bottom {
   grid-template-columns: 1fr;
   grid-gap: 16px;
   background-color: #ffff;
-  width: 100%;
+  width: 95%;
+  margin: auto;
   justify-items: center;
   align-items: center;
 }
@@ -362,7 +366,7 @@ h4.project-desc {
 
 img {
   vertical-align: middle;
-  width: 374px;
+  width: 50px;
 }
 
 .skills-name {
@@ -578,7 +582,6 @@ hr {
   color: #ffff;
   font-size: 28px;
   font-weight: bold;
-  padding-top: 32px;
 }
 
 .close i :hover,
@@ -656,10 +659,10 @@ p.modal-text-content {
   .desktop_nav {
     display: flex;
     width: 100%;
-    margin-left: auto;
+    /* margin-left: auto; */
     align-items: center;
     justify-content: center;
-    margin-right: 100px;
+    /* margin-right: 100px; */
   }
 
   .desktop_nav_wrapper {
@@ -695,7 +698,7 @@ p.modal-text-content {
     background-image: url('../images/Header-llustration-desktop.png');
     background-repeat: no-repeat;
     width: 100%;
-    height: 1250px;
+    height: 1100px;
     position: relative;
   }
 
@@ -708,7 +711,7 @@ p.modal-text-content {
   }
 
   .headline-desc h1 {
-    width: 700px;
+    /* width: 700px; */
     font-size: 48px;
     line-height: 60px;
   }
@@ -720,7 +723,7 @@ p.modal-text-content {
     align-items: center;
     justify-content: center;
     letter-spacing: 0.89px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
   }
 
   .allprojects-container {
@@ -731,7 +734,8 @@ p.modal-text-content {
   }
 
   .project-container-card {
-    width: 32vw;
+    /* width: 32vw; */
+    flex: 25%;
     height: 60vh;
   }
 
@@ -773,9 +777,9 @@ p.modal-text-content {
     color: #172b4d;
   }
 
-  .wrapper {
+  /* .wrapper {
     margin-bottom: 150px;
-  }
+  } */
 
   .form-wrapper {
     margin-bottom: 150px;
@@ -935,7 +939,7 @@ p.modal-text-content {
 
   .close {
     position: absolute;
-    top: -20px;
+    top: 0px;
     right: 10px;
     cursor: pointer;
   }
@@ -1002,8 +1006,7 @@ p.modal-text-content {
     text-align: center;
     border-radius: 4px;
     align-self: flex-end;
-
-    /* width: 128px; */
+    width: 128px;
   }
 
   .live-source-div {

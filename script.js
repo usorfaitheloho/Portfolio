@@ -99,7 +99,7 @@ document.querySelector('.modals').innerHTML = projectDatas.map((data) => `
 <div class="modal-container">
 <div class="modal-wrapper">
 <div class="close" id="close-desktop">
-<i class="fa fa-times fa-1x"></i>
+<i class="fa fa-times fa-1x close-btn"></i>
 </div>
   <div class="project-image"><div class="close close-mobile">
   <i class="fa fa-times fa-1x"></i>
@@ -187,9 +187,6 @@ document.querySelector('.allprojects-container').innerHTML = projectCard.map((da
         <li class="tech-list">
             <p class="tech-name">${data.technologies[2]}</p>
         </li>
-        <li class="tech-list">
-            <p class="tech-name">${data.technologies[3]}</p>
-        </li>
     </ul>
     <button class="btn btn-projects" type="button">See Projects</button>
     </div>
@@ -207,7 +204,7 @@ modalButtonZip.forEach((pair) => {
 });
 
 // // event listener for closing modal on button click
-document.querySelectorAll('.close').forEach((close) => {
+document.querySelectorAll('.close-btn').forEach((close) => {
   close.addEventListener('click', () => {
     document.querySelectorAll('.modal').forEach((modal) => { modal.style.display = 'none'; });
   });
