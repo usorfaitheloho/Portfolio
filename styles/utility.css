@@ -325,7 +325,8 @@ h4.project-desc {
   align-self: center;
   gap: 10px;
 }
-.btn-projects a{
+
+.btn-projects a {
   color: #fff;
   text-decoration: none;
 }
@@ -334,7 +335,7 @@ h4.project-desc {
   width: 15%;
 }
 
-.btn-projects-source a{
+.btn-projects-source a {
   color: #fff;
   text-decoration: none;
 }
@@ -577,6 +578,7 @@ hr {
   margin-top: 10px;
   position: relative;
   width: 100%;
+
   /* min-height: 450px; */
 }
 
@@ -675,9 +677,11 @@ p.modal-text-content {
   .desktop_nav {
     display: flex;
     width: 100%;
+
     /* margin-left: auto; */
     align-items: center;
     justify-content: center;
+
     /* margin-right: 100px; */
   }
 
@@ -739,6 +743,7 @@ p.modal-text-content {
     align-items: center;
     justify-content: center;
     letter-spacing: 0.89px;
+
     /* margin-top: -30px; */
   }
 
@@ -955,7 +960,7 @@ p.modal-text-content {
 
   .close {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 10px;
     cursor: pointer;
   }
