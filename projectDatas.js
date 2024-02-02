@@ -29,7 +29,7 @@ const projectDatas = [
       technologies: ['html', 'css', 'javascript'],
       liveVersionImage: ['./images/seeLiveIcon.png'],
       sourceImage: ['./images/Vector.png'],
-      liveVersion: 'spaceship-travellers.netlify.app/',
+      liveVersion: 'https://spaceship-travellers.netlify.app/',
       source: 'https://github.com/usorfaitheloho/space-travellers',
     },
     {
