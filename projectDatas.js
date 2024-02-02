@@ -29,7 +29,7 @@ const projectDatas = [
       technologies: ['html', 'css', 'javascript'],
       liveVersionImage: ['./images/seeLiveIcon.png'],
       sourceImage: ['./images/Vector.png'],
-      liveVersion: 'sbf-spacetravellers.herokuapp.com/',
+      liveVersion: 'spaceship-travellers.netlify.app/',
       source: 'https://github.com/usorfaitheloho/space-travellers',
     },
     {
@@ -49,7 +49,7 @@ const projectDatas = [
       technologies: ['html', 'css', 'javascript'],
       liveVersionImage: ['./images/seeLiveIcon.png'],
       sourceImage: ['./images/Vector.png'],
-      liveVersion: 'https://alwayscare.herokuapp.com/doctors',
+      liveVersion: 'https://doctors-appointment-app-2k1t.onrender.com',
       source: 'https://github.com/vickymarz/doctors-appointment-frontend',
     },
     {
